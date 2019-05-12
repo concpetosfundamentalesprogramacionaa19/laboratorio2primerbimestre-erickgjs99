@@ -52,15 +52,19 @@ mensaje_f = String.format("%s%s\n\n%s\n\n%s %s\n%s %.2f\n%s %d\n\n%s\t%s\t"
                 "Pasaje","Bar", "Salidas");
         while (cont <= num_sons) {
             System.out.printf("Gastos en Pasajes de hijo "+num_reports+"\n");
-            ingre_pasaje = entrada.nextDouble();
+            ingre_pasaje = entrada.nextDouble();   
+        // Para acumular el total de pasajes gastados en el sueldo semanal
             total_p = total_p + ingre_pasaje;
             System.out.printf("Gastos en Bar de hijo "+num_reports+"\n");
             ingre_bar = entrada.nextDouble();
             total_b = total_b + ingre_bar;
+        // Para acumular el total de bares gastados en el sueldo semanal
             System.out.printf("Gastos en Salidas de hijo "+num_reports+"\n");
             ingre_salidas = entrada.nextDouble();
             total_s = total_s + ingre_salidas;
+        // Para acumular el total de salidas gastados en el sueldo semanal
             result_f = total_p + total_b + total_s;
+        //para saber el total gastado de los n hijos para la semana
             mensaje_f = String.format("%sHijo %d\t%.2f\t%.2f\t%.2f\n",mensaje_f 
             , cont, ingre_pasaje, ingre_bar, ingre_salidas);
             
