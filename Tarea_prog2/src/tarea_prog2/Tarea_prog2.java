@@ -74,11 +74,14 @@ mensaje_f = String.format("%s%s\n\n%s\n\n%s %s\n%s %.2f\n%s %d\n\n%s\t%s\t"
           //para sus gastos semanales 
             if(ingre_sem > result_f){
                 System.out.printf("El padre de familia "+nombre_pf+
-                        " le alcanza el dinero semanal, para sus gastos");
+                        " le alcanza el dinero semanal, para sus gastos\n\n"
+                                + "Fin de reporte");
             }else{
                 System.out.printf("El padre de familia "+nombre_pf+
-                        " le falta el dinero semanal, para sus gastos");
+                        " le falta el dinero semanal, para sus gastos\n\n"
+                                + "Fin de reporte");
             }
+            
      // final de ciclo      
     }
 
